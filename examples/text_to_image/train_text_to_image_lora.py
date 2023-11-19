@@ -542,8 +542,7 @@ def main():
         if args.train_data_dir is not None:
             data_files["train"] = os.path.join(args.train_data_dir, "**")
         dataset = load_dataset(
-            "imagefolder",
-            data_files=data_files,
+            "mighty-slab/educational-figures",
             cache_dir=args.cache_dir,
         )
         # See more about loading custom images at
